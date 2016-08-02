@@ -1,0 +1,8 @@
+name: Frontend Api
+description: Lesson 3 frontend api module
+type: module
+core: 8.x
+version: 1.0
+package: Custom Modules
+dependencies:
+  - block

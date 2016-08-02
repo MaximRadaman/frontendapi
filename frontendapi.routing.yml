@@ -1,0 +1,35 @@
+frontendapi.cars:
+  path: 'cars'
+  defaults:
+   _controller: '\Drupal\frontendapi\Controller\FrontendapiController::carList'
+   _title: 'Cars links page'
+  requirements:
+    _permission: 'access content'
+
+frontendapi.cars.car:
+  path: 'cars/{car}'
+  defaults:
+   _controller: '\Drupal\frontendapi\Controller\FrontendapiController::car'
+  requirements:
+    _permission: 'access content'
+
+frontendapi.cars.carListJson:
+  path: 'cars/list'
+  defaults:
+   _controller: '\Drupal\frontendapi\Controller\FrontendapiController::carListJson'
+  requirements:
+    _permission: 'access content'
+
+frontendapi.redirect.onliner:
+  path: 'onliner'
+  defaults:
+   _controller: '\Drupal\frontendapi\Controller\FrontendapiController::responseRedirectOnliner'
+  requirements:
+    _permission: 'access content'
+
+frontendapi.bmwclub:
+  path: 'bmwclub'
+  defaults:
+   _controller: '\Drupal\frontendapi\Controller\FrontendapiController::bmwClubInfo'
+  requirements:
+    _permission: 'access content'
