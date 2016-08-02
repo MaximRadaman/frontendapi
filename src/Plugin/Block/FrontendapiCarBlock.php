@@ -45,7 +45,7 @@ class FrontendapiCarBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function blockSubmit($form, FormStateInterface $form_state) {
-    $this->setConfigurationValue('frontendapi_car_mark', $form_state->getValue('hello_block_name'));
+    $this->setConfigurationValue('frontendapi_car_mark', $form_state->getValue('frontendapi_car_mark'));
   }
 
   /**
